@@ -6,7 +6,7 @@ fun main() {
         when(temp){
             30-> println("it's Hot")
             20-> println("it's Comfy")
-            15-> println("its Cold")
+            15-> println("IT'S COLD")
             else-> println(temp)
         }
         temp--
