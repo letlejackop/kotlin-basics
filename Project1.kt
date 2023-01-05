@@ -3,9 +3,9 @@ package com.example.myfirstapp
 fun main() {
 
     var t:ToDo = ToDo()
-    var m:Task =Task(1,"clean","clean the bathroom")
-    var k:Task =Task(2,"clean","clean the bathroom", true )
-    var l:Task =Task(3,"clean","clean the bathroom", true)
+    var m:Task =Task(1,"ahmed","clean the bathroom")
+    var k:Task =Task(2,"faisal","clean the bathroom", true )
+    var l:Task =Task(3,"kevin","clean the bathroom", true)
 
     t.Add_Task(m)
     t.Add_Task(k)
