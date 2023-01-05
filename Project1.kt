@@ -27,7 +27,8 @@ data class Task(val id:Int, val name:String, val note:String, var isCompleted:Bo
 
 // Data Class ToDo
 class ToDo(){
-    private var tasks = arrayListOf<Task>()
+    var tasks = arrayListOf<Task>()
+     private set
 
     // Method Show_All that prints all the tasks present in array tasks
     fun Show_All(){
