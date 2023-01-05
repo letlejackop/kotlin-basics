@@ -28,7 +28,7 @@ data class Task(val id:Int, val name:String, val note:String, var isCompleted:Bo
 // Data Class ToDo
 class ToDo(){
     var tasks = arrayListOf<Task>()
-     private set
+    private set
 
     // Method Show_All that prints all the tasks present in array tasks
     fun Show_All(){
@@ -56,6 +56,7 @@ class ToDo(){
     // Method Add_Task adds a task to the array tasks given a Task object
     fun Add_Task(task: Task){
         tasks.add(task)
+        println("added task with id ${task.id} successfully")
     }
 
     // Method Remove_Task removes a task from array tasks given an id
@@ -63,14 +64,16 @@ class ToDo(){
         for (t in tasks){
             if (t.id == id){
                 tasks.remove(t)
+                println("task with id $id was successfully removed")
                 break
             }
         }
+        println("task with id $id was not found")
     }
 
     // Method Change_Task changes iscompleted status in a task given a task object
     fun Change_Task(task: Task){
          task.isCompleted= !task.isCompleted
-        println(task.isCompleted)
+        println("task with id ${task.id} status has changed to $task.isCompleted")
     }
 }
